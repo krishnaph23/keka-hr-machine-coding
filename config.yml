@@ -1,0 +1,16 @@
+server:
+  # Your REST APIs, e.g. POST http://localhost:9090/api/echo
+  applicationConnectors:
+    - type: http
+      port: 8080
+      bindHost: 127.0.0.1
+  # Dropwizard administration endpoints; separate from your REST APIs.
+  adminConnectors:
+    - type: http
+      port: 8081
+      bindHost: 127.0.0.1
+
+logging:
+  level: INFO
+  appenders:
+    - type: console
